@@ -1,0 +1,6 @@
+- hosts: all
+
+  tasks:
+  - apt: name=apache2
+  - name: no need but I would like to restart apache
+    service: name=apache2 state=restarted
